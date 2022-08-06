@@ -162,6 +162,17 @@ function selectItem(s){
 
 window.selectItem = selectItem;
 
+function toggleDisplay(id){
+  let element = document.getElementById(id);
+  if (element.style.display === "none") {
+    element.style.display = "block";
+  } else {
+    element.style.display = "none";
+  }
+}
+
+window.toggleDisplay = toggleDisplay;
+
 function clearPage(){
   while(content.firstChild){
     content.removeChild(content.firstChild);

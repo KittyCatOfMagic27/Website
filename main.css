@@ -56,7 +56,7 @@ div.content {
   margin-top: 55px;
   margin-left: 0;
   padding: 1px 16px;
-  height: var(--page-size);
+  min-height: var(--page-size);
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

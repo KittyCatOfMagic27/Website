@@ -57,6 +57,7 @@ div.content {
   margin-left: 0;
   padding: 1px 16px;
   min-height: var(--page-size);
+  height: auto;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -157,10 +158,8 @@ div.content {
   font-stretch: 100%;
   font-style: normal;
   font-weight: 400;
-  /*height: auto;*/
-  /*line-height: 28px;*/
-  /*width: 150px;*/
-  height: 100%;
+  min-height: var(--page-size);
+  height: auto;
   background-color: var(--white);
   position: static;
 }

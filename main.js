@@ -18,8 +18,9 @@ class Element{
     this.type = obj.type;
     this.text = obj.text;
     this.attr = obj.attr;
+    this.children = [];
     for(let o in obj.children){
-      this.children+=new Element().fromObject(o);
+      this.children.push(new Element().fromObject(obj.children[o]));
     }
     return this;
   }
@@ -42,6 +43,10 @@ class Element{
   appendTo(page){
     let element = this.getSelf();
     page.appendChild(element);
+    if(!Array.isArray(this.children)){
+      console.log(this);
+      console.error("Attributes of Element are not an Array");
+    }
     this.children.forEach((x)=>{
       x.appendTo(element);
     });
@@ -50,6 +55,10 @@ class Element{
   getSelf(){
     let element = document.createElement(this.type);
     if(this.text!=="") element.textContent=this.text;
+    if(!Array.isArray(this.attr)){
+      console.log(this);
+      console.error("Attributes of Element are not an Array");
+    }
     this.attr.forEach((x)=>{
       const att = document.createAttribute(x[0]);
       att.value = x[1];

@@ -1,45 +1,93 @@
 {
-  "lib":{
-    "stdlib":{
+  "lib": {
+    "stdlib": {
       "abrv": "stdlib",
       "name": "Alio Standard Library",
-      "page":{
-        "type": "a",
-        "text": "Hello Stdlib!",
-        "attr": [["class", "page-header"]],
-        "children": []
+      "page": {
+        "type": "div",
+        "text": "",
+        "attr": [],
+        "children": [
+          {
+            "type": "a",
+            "text": "Hello Stdlib!",
+            "attr": [
+              [
+                "class",
+                "page-header"
+              ]
+            ],
+            "children": []
+          }
+        ]
       }
     },
-    "mem":{
+    "mem": {
       "abrv": "mem",
       "name": "Memory Library",
-      "page":{
-        "type": "a",
-        "text": "Hello Mem!",
+      "page": {
+        "type": "div",
+        "text": "",
         "attr": [],
-        "children": []
+        "children": [
+          {
+            "type": "a",
+            "text": "Hello Memory!",
+            "attr": [
+              [
+                "class",
+                "page-header"
+              ]
+            ],
+            "children": []
+          }
+        ]
       }
     }
   },
-  "lang":{
-    "proc":{
+  "lang": {
+    "proc": {
       "abrv": "proc",
       "name": "Procedures",
-      "page":{
-        "type": "a",
-        "text": "Hello Proc!",
+      "page": {
+        "type": "div",
+        "text": "",
         "attr": [],
-        "children": []
+        "children": [
+          {
+            "type": "a",
+            "text": "Hello Procedures!",
+            "attr": [
+              [
+                "class",
+                "page-header"
+              ]
+            ],
+            "children": []
+          }
+        ]
       }
     },
-    "type":{
+    "type": {
       "abrv": "type",
       "name": "Type System",
-      "page":{
-        "type": "a",
-        "text": "Hello Types!",
+      "page": {
+        "type": "div",
+        "text": "",
         "attr": [],
-        "children": []
+        "children": [
+          {
+            "type": "a",
+            "text": "Hello Type System!",
+            "attr": [
+              [
+                "class",
+                "page-header"
+              ]
+            ],
+            "children": []
+          }
+        ]
       }
     }
   }

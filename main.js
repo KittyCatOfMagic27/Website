@@ -169,6 +169,7 @@ function clearPage(){
 }
 
 function loadPage(page){
+  page = page === "/" ? "#home" : page;
   pages.get(page).appendTo(content);
 }
 
